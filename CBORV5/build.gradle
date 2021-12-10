@@ -1,0 +1,19 @@
+plugins {
+    id 'groovy'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = JavaVersion.VERSION_11
+targetCompatibility = JavaVersion.VERSION_11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:3.0.5'
+    implementation 'net.spy:spymemcached:2.12.3'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.13.0'
+}
